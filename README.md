@@ -61,6 +61,43 @@ Follow these steps to install and set up the project directly from the GitHub re
 
 6. **Access the Project**
    - Open a web browser or the appropriate client to access the project.
+
+   
+
+## API Key Usage
+This project utilizes the OpenAI GPT-3 API for generating responses. To run the chatbot with the API, you'll need to obtain an API key from OpenAI. Follow the steps below to set up your API key:
+
+### Obtaining an OpenAI API Key
+
+- Sign Up on OpenAI Platform:
+  - If you don't have an account, sign up on the OpenAI platform.
+
+- Create a New API Key:
+  - Once logged in, navigate to the API section or dashboard.
+  - Create a new API key by following the on-screen instructions.
+    
+- Copy Your API Key:
+  - After creating the API key, copy it from the OpenAI platform.
+
+    
+### Adding API Key to the Project
+
+- Create a .env File:
+  - In the project's root directory, create a file named .env.
+
+- Add API Key to .env:
+  - Open the ```.env``` file in a text editor.
+  - Add the following line, replacing your-api-key with the actual API key:
+  - ```sh
+    OPENAI_API_KEY=your-api-key
+    ```
+  - Save the file.
+
+### Using the API Key in the Project
+
+The project automatically reads the API key from the .env file using the python-dotenv library. Once the key is added to the .env file, the chatbot will use it to interact with the OpenAI GPT-3 API.
+
+Note: Ensure the .env file is kept secure and not shared publicly, as it contains sensitive information.
      
 
 ## Contributing
